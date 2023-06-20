@@ -1,12 +1,12 @@
 package br.com.gabrielorander.barto_compose.loading_button
 
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 
-// Create a composable button with loading state
 @Composable
 fun LoadingButton(
     label: String,
@@ -14,7 +14,8 @@ fun LoadingButton(
     modifier: Modifier = Modifier
 ) {
     Button(
-        modifier = modifier,
+        modifier = modifier
+            .fillMaxWidth(),
         onClick = onClick
     ) {
         Text(text = label)
