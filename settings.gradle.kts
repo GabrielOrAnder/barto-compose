@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "barto-compose"
 include(":app")
+include(":sample")
