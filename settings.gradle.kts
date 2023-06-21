@@ -14,5 +14,5 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "barto-compose"
-include(":app")
+include(":barto-compose")
 include(":sample")

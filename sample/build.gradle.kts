@@ -52,7 +52,7 @@ android {
 
 dependencies {
 
-    implementation(project(":app"))
+    implementation(project(":barto-compose"))
     implementation(libs.core.ktx)
     implementation(libs.lifecycle.runtime.ktx)
     implementation(libs.activity.compose)
