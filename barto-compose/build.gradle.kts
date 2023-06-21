@@ -64,6 +64,15 @@ dependencies {
 
 afterEvaluate {
     publishing {
+        publications{
+            create<MavenPublication>("release") {
+                from(components["release"])
+                groupId = "br.com.gabrielorander"
+                artifactId = "barto-compose"
+                version = "1.0.0"
+            }
+        }
+
         repositories {
             maven {
                 name = "GitHubPackages"
