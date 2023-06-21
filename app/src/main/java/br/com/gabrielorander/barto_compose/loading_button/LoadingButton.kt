@@ -1,8 +1,7 @@
 package br.com.gabrielorander.barto_compose.loading_button
 
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.heightIn
-import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.height
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -19,7 +18,7 @@ fun LoadingButton(
     Button(
         modifier = modifier
             .fillMaxWidth()
-            .padding(16.dp),
+            .height(48.dp),
         onClick = onClick
     ) {
         Text(text = label)
